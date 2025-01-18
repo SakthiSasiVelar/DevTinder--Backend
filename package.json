@@ -1,0 +1,14 @@
+{
+  "name": "devtinder-backend",
+  "version": "1.0.0",
+  "description": "dev tinder",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "nodemon src/app"
+  },
+  "author": "SAKTHI SASI VELAR K P",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
