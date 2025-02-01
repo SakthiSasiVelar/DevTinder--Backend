@@ -12,12 +12,18 @@ app.all("/test",(req,res,next) =>{
     next();
 })
 
-app.get("/data",(req,res)=>{
+app.get("/data/:id",(req,res)=>{
+    console.log(req.params , req.query)
     res.send('data is send');
 })
 
-app.get("/test/123",(req,res)=>{
+app.get("/data/admin",(req,res)=>{
     res.send('test route is called')
+})
+
+app.use((error,req,res,next) => {
+    console.log('called')
+    res.send('123')
 })
 
 app.listen(3000 , () => {
